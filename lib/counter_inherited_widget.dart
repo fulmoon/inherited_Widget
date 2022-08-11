@@ -26,6 +26,7 @@ class CounterInheritedWidget extends StatelessWidget {
             MaterialPageRoute(builder: (context) => const NextScreen()),
           );
         },
+        child: const Icon(Icons.add),
       ),
     );
   }

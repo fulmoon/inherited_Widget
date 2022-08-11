@@ -10,7 +10,8 @@ class Counter extends InheritedWidget{
   }) : super(key: key, child: child);
 
   static Counter of(BuildContext context){
-     final Counter? counter = context.dependOnInheritedWidgetOfExactType<Counter>();
+     final Counter? counter =
+        context.dependOnInheritedWidgetOfExactType<Counter>();
      assert(counter != null, 'No Counter found in context');
      return counter!;
   }
